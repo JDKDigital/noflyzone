@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "reliquary:rending_gale",
+      "required": false
+    },
+    {
+      "id": "bloodmagic:airsigil",
+      "required": false
+    }
+  ]
+}
