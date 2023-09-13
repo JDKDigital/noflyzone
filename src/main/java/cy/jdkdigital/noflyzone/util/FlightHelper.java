@@ -21,6 +21,9 @@ import java.util.Objects;
 public class FlightHelper
 {
     public static boolean isAllowedToFly(Player player) {
+        if (player.isCreative() || player.isSpectator()) {
+            return true;
+        }
         return isAllowedDimension(player) && isAllowedBiome(player) && isAllowedStructure(player);
     }
 

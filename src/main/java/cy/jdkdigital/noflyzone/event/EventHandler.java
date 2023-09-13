@@ -32,7 +32,7 @@ public class EventHandler
 
     @SubscribeEvent
     public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-        if (event.player.tickCount % Config.checkInterval == 0 && FlightHelper.isFlying(event.player) && !event.player.isCreative()) {
+        if (event.player.tickCount % Config.checkInterval == 0 && FlightHelper.isFlying(event.player)) {
             if (!FlightHelper.isAllowedToFly(event.player)) {
                 FlightHelper.stopFlying(event.player);
             }
