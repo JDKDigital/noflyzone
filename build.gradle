@@ -119,6 +119,9 @@ repositories {
     maven {
         url "https://www.cursemaven.com"
     }
+    maven {
+        url 'https://maven.blamejared.com'
+    }
 }
 
 dependencies {
@@ -128,12 +131,30 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    compileOnly "net.darkhax.gamestages:GameStages-Forge-${minecraft_version}:15.0.1"
 
+    implementation fg.deobf("curse.maven:bookshelf-228525:4771036")
+    implementation fg.deobf("curse.maven:game-stages-268655:4648424")
     implementation fg.deobf("curse.maven:curios-309927:4738776")
     implementation fg.deobf("curse.maven:angel-ring-333396:4641785")
     implementation fg.deobf("curse.maven:cucumber-272335:4734453")
     implementation fg.deobf("curse.maven:iron-jetpacks-284497:4744200")
     implementation fg.deobf("curse.maven:reliquary-reincarnations-241319:4666082")
+    implementation fg.deobf("curse.maven:geckolib-388172:4711657")
+    implementation fg.deobf("curse.maven:ars-nouveau-401955:4751471")
+    implementation fg.deobf("curse.maven:cyclops-core-232758:4724211")
+    implementation fg.deobf("curse.maven:evilcraft-74610:4744922")
+    implementation fg.deobf("curse.maven:pneumaticcraft-repressurized-281849:4772884")
+    implementation fg.deobf("curse.maven:create-328085:4762216")
+    implementation fg.deobf("curse.maven:kotlin-for-forge-351264:4630525")
+    implementation fg.deobf("curse.maven:create-jetpack-655608:4957753")
+    implementation fg.deobf("curse.maven:botarium-704113:5024181")
+    implementation fg.deobf("curse.maven:resourceful-config-714059:5020441")
+    implementation fg.deobf("curse.maven:resourceful-lib-570073:4973823")
+    implementation fg.deobf("curse.maven:ad-astra-635042:5075036")
+    implementation fg.deobf("curse.maven:mekanism-268560:4776410")
+    implementation fg.deobf("curse.maven:nameless-trinkets-541466:4741678")
+    implementation fg.deobf("curse.maven:expandability-465066:4630724")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

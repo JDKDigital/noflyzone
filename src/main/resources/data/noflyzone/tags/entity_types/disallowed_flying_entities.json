@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "evilcraft:broom",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:beehemoth",
+      "required": false
+    }
+  ]
+}
